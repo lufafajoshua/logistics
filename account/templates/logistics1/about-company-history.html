@@ -1,0 +1,479 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <!--====== USEFULL META ======-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Transportation & Agency Template is a simple Smooth transportation and Agency Based Template" />
+    <meta name="keywords" content="Portfolio, Agency, Onepage, Html, Business, Blog, Parallax" />
+
+    <!--====== TITLE TAG ======-->
+    <title>winner shield limited</title>
+
+    <!--====== FAVICON ICON =======-->
+    <link rel="shortcut icon" type="image/ico" href="/static/logistics/img/favicon.png" />
+
+    <!--====== STYLESHEETS ======-->
+    <link rel="stylesheet" href="/static/logistics/css/normalize.css">
+    <link rel="stylesheet" href="/static/logistics/css/animate.css">
+    <link rel="stylesheet" href="/static/logistics/css/stellarnav.min.css">
+    <link rel="stylesheet" href="/static/logistics/css/owl.carousel.css">
+    <link href="/static/logistics/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/logistics/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--====== MAIN STYLESHEETS ======-->
+    <link href="/static/logistics/style.css" rel="stylesheet">
+    <link href="/static/logistics/css/responsive.css" rel="stylesheet">
+
+    <script src="/static/logistics/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="single-page">
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!--SCROLL TO TOP-->
+    <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+
+    <!--START TOP AREA-->
+    <header class="top-area single-page" id="home">
+        <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
+        <div class="header-top-area">
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="{% url 'account:index' %}" class="navbar-brand"><img src="/static/logistics/img/capture5.png" alt="logo"></a>
+                        </div>
+                        <div id="main-nav" class="stellarnav">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li><a href="{% url 'account:index' %}">home</a>
+                                </li>
+                                <li><a href="{% url 'account:about' %}">about</a>
+                                    <ul>
+                                        <li><a href="{% url 'account:about_profile' %}">About Profile</a></li>
+                                        <li><a href="{% url 'account:about_history' %}">About History</a></li>
+                                        <li><a href="{% url 'account:about_team' %}">About Team</a></li>
+                                        <li><a href="{% url 'account:about_support' %}">About Support</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'account:services' %}">Services</a>
+                                </li>
+                                <li><a href="{% url 'account:blog' %}">Blog</a>
+                                    <ul>
+                                        <li><a href="{% url 'account:cargoblog' %}">Cargo Handling</a></li>
+                                        <li><a href="{% url 'account:airblog' %}">Freight forwarding</a></li>
+                                        <li><a href="{% url 'account:consultancyblog' %}">Tax Consultancy</a></li>
+                                        <li><a href="{% url 'account:logisticsblog' %}">Logistics</a></li>
+                                        <li><a href="{% url 'account:storageblog' %}">Cargo storage</a></li>
+                                        <li><a href="{% url 'account:suppliesblog' %}">General supplies</a></li>
+                                        <li><a href="{% url 'account:transferblog' %}">Money Transfer</a></li>
+                                        <li><a href="{% url 'account:transportationblog' %}">Transportation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'account:create_contact' %}">Contact</a>
+                                </li>
+                                <li><a href="{% url 'account:location' %}">Location</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--END MAINMENU AREA END-->
+        </div>
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>About Us</h2>
+                            <ul class="page-location">
+                                <li><a href="{% url 'account:index' %}">Home</a></li>
+                                <li>/</li>
+                                <li><a href="{% url 'account:about' %}">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+    <!--ABOUT DETAILS AREA-->
+    <section class="about-details-area section-padding wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
+                    <div class="area-title text-center wow fadeIn">
+                        <h2>About Winner shield</h2>
+                        <p>To satisfy our customers with total logistic solutions that are timely, innovative, effective and efficient led by a workforce dedicated to quality and delivery.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="about-details-menu">
+                        <li><a data-toggle="tab" href="#company">Company Profile</a></li>
+                        <li class="active"><a data-toggle="tab" href="#history">Our History</a></li>
+                        <li><a data-toggle="tab" href="#team">Team Member</a></li>
+                        <li><a data-toggle="tab" href="#support">Client Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="tab-content about-details-content">
+                        <div id="company" class="about-company tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="about-history-content">
+                                        <p>
+                                            <p>
+                                                <h4>OUR COMMITMENTS</h4>
+                                                Our commitment to integrity is a cornerstone of our past, present and future success. This derives our dedication to uphold ourselves to the highest standards of business conduct. We are committed to upholding our Code of Ethics in every transaction. Through its important guidelines, the code helps us understand how to do business responsibly –how to put integrity first. Nothing ever should compromise our commitment to performance with integrity.
+                                            </p>
+                                            <p>
+                                                <h4>CORE VALVES</h4>
+                                                We believe that any business conduct can be ethical only when it rest on the nine core values of Honesty, Integrity, Respect, Fairness, Purposefulness, Trust, Responsibility, Caring and Commitments.
+                                            </p> 
+                                            “We mean what we say and we honor our word in business dealings”
+                                                        Challenge us to be the part of your solutions
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="about-history-content">
+                                        <img src="/static/logistics/img/about/about-cargo.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                    <div class="about-history-content">
+                                        <p>
+                                            <h4>OUR CUSTOMERS</h4>
+                                            Focused on our customers needs we provide integrated logistics solutions of outstanding quality and operational excellence. To become the extension of your business supported by our committed and dedicated professional team with 24/7 reach.
+                                        </p>
+                                        “Relationships with our customers are our major focus”
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                                    <div class="about-history-content">
+                                        <h3>Our Vision</h3>
+                                        <p>To grow and be considered as one of the most reliable & flexible, clearing and freight & logistics company that serves freight forwarding plus transportation and logistics segments in an exceptionally professional, short-timed, and quality consciousness manner </br>“The flexibility to best meet our customers, requirements grow out of the stable structures that are a key feature of WSL as a company”</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                                    <div class="about-history-content">
+                                        <img src="/static/logistics/img/about/about-details-bottom.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                                    <div class="about-history-content">
+                                        <h3>Our Mission</h3>
+                                        <p>“To satisfy our customers with total logistic solutions that are timely, innovative, effective and efficient led by a workforce dedicated to quality and delivery”</p>
+                                        <ul>
+                                            <li><i class="fa fa-check"></i> WSL Worldwide Network</li>
+                                            <li><i class="fa fa-check"></i> One – stop for Total Logistics Solutions</li>
+                                            <li><i class="fa fa-check"></i> Committed to High Quality Services</li>
+                                            <li><i class="fa fa-check"></i> Highly Trained, Motivated and Result Oriented Staff</li>
+                                            <li><i class="fa fa-check"></i> Excellent Team Work</li>
+                                            <li><i class="fa fa-check"></i> Competitive Rates</li>
+                                            <li><i class="fa fa-check"></i> Positive Approach</li>
+                                            <li><i class="fa fa-check"></i> Transparency</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="history" class="company-history tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="about-history-content">
+                                        <p>
+                                            Winner shield started in 2017 may, it started business of buying and selling used cars. 
+                                            It has acquired license to operate as a clearing agency. 
+                                            It was given permission to serve in the Ugandan government. It will discharge her duties with the laws of Uganda. 
+                                            It has a management and urge the management to be one and law-abiding managers 
+                                            following the laws of Uganda as they discharge their day today duties. 
+                                            The team should a bind with the laws of Uganda to avoid being penalized and fined by the government of Uganda and Uganda Revenue Authority (URA). 
+                                            He appreciated the operations manager for the good cooperation and work well done. 
+                                            Winner shield has come to stay and expand, to be the biggest company in Uganda. 
+                                            Management will work hand in hand to see that the company does all its duties which include, clearing and forwarding, 
+                                            import and exports, supplies and construction works and other services.
+                                        </p>
+                                        
+                                        <p>
+                                        <h4>Message From CEO</h4>
+                                        Winner Shield ltd has growing imputation as a provider of total solutions for logistics needs. The clearing and forwarding industry in addition to transportation and logistics are ever changing and becoming even more sophisticated. Players of these industries have to constantly innovate and upgrade their operating methods to serve their clients more efficiently and cost effectively.
+                                        “To continue to earn a reputation of integrity service and diversity that is unmatched in our industry. The Dependable Difference in order to achieve these lofty objectives, we must hire and retain early the most qualified and dedicated individuals who share the Company’s visions”
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="about-history-content">
+                                        <img src="/static/logistics/img/about/about-cargo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="team" class="team-list tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                    <div class="single-team">
+                                        <div class="member-image">
+                                            <img src="/static/logistics/img/team/.jpg" alt="">
+                                        </div>
+                                        <div class="member-details">
+                                            <h3>MR. KAYIWA MARTIN</h3>
+                                            <p>FINANCE MANAGER  
+                                                <p><i class="fa fa-phone"></i> +256-759401570/+256-782004726</p>
+                                                <p><i class="fa fa-user"></i> kayiwamartin73@gmail.com</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                    <div class="single-team">
+                                        <div class="member-image">
+                                            <img src="/static/logistics/img/team/.jpg" alt="">
+                                        </div>
+                                        <div class="member-details">
+                                            <h3>MR. ANGURIA CHARLES</h3>
+                                            <p>C.E.O 
+                                                <p><i class="fa fa-phone"></i> +256-783713080/+256-754781951</p>
+                                                <p><i class="fa fa-user"></i> winnersshield@gmail.com</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                    <div class="single-team">
+                                        <div class="member-image">
+                                            <img src="/static/logistics/img/team/.jpg" alt="">
+                                        </div>
+                                        <div class="member-details">
+                                            <h3>MRS. MARIDIO ISABEL MONDO </h3>
+                                            <p>MANAGER FINANCE &ADMINISTRATION
+                                                <p><i class="fa fa-phone"></i> +256-782884629/+256-705713080</p>
+                                                <p><i class="fa fa-user"></i> winnersshield@gmail.com</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                    <div class="single-team">
+                                        <div class="member-image">
+                                            <img src="/static/logistics/img/team/.jpg" alt="">
+                                        </div>
+                                        <div class="member-details">
+                                            <h3>MRS. AMEEDE SUSAN </h3>
+                                            <p>DECLARANT
+                                                <p><i class="fa fa-phone"></i> +256-770880859/+256-703344538</p>
+                                                <p><i class="fa fa-user"></i> suziemosh246@gmail.com</p>
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                    <div class="single-team">
+                                        <div class="member-image">
+                                            <img src="/static/logistics/img/team/.jpg" alt="">
+                                        </div>
+                                        <div class="member-details">
+                                            <h3>MRS. NANONO RODAH</h3>
+                                            <p>SALES
+                                                <p><i class="fa fa-phone"></i> +256-703058581</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="support" class="support-content tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                    <div class="single-promo">
+                                        <div class="promo-icon"><i class="fa fa-anchor"></i></div>
+                                        <div class="promo-details">
+                                            <h3>Our Location</h3>
+                                            <p>HEAD QUARTERS 
+                                                ARUA PARK PLAZA GROUND FLOOR/ ENTEBBE AIRPORT TO HANDLE AIR CARGO/MOMBASA FOR FREIGHT / LEGO SUDAN BORDER
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="single-promo">
+                                        <div class="promo-icon"><i class="fa fa-newspaper-o"></i></div>
+                                        <div class="promo-details">
+                                            <h3>Latest News</h3>
+                                            <p>Our clients now have a website where they can get access to our services</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                    <div class="single-promo">
+                                        <div class="promo-icon"><i class="fa fa-umbrella"></i></div>
+                                        <div class="promo-details">
+                                            <h3>24/7 Support</h3>
+                                            <p>Our offices are open 24/7 and we can offer you help at any time</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-promo">
+                                        <div class="promo-icon"><i class="fa fa-bicycle"></i></div>
+                                        <div class="promo-details">
+                                            <h3>Fast Delevery</h3>
+                                            <p>With our efficient transportation network, fast delivery of your goods is guaranteed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                                    <div class="promo-img">
+                                        <img src="/static/logistics/img/promo/promo_troli.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT DETAILS AREA END-->
+   
+        <!--FOOER AREA-->
+        <div class="footer-area dark-bg">
+            <div class="footer-area-bg"></div>
+            <div class="footer-top-area wow fadeIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-border"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-area wow fadeIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <div class="single-footer-widget footer-about">
+                                <h3>About Us</h3>
+                                <p>Winner Shield is a Logistics company dedicated to offer logistics the best business and logistics services its clients.</p>
+                                <ul>
+                                    <li><i class="fa fa-phone"></i>+256-759401570/+256-782004726 +256-703058581</li>
+                                    <li><i class="fa fa-envelope-o"></i> <a href="mailto:winnersshield@gmail.com">winnersshield@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <div class="single-footer-widget twitter-widget">
+                                <h3>Location</h3>
+                                <ul>
+                                    <li>
+                                        <div class="twitter-icon"><i class="map-marker"></i></div>
+                                        <div class="tweet-detail">
+                                            <p>ARUA PARK PLAZA GROUND FLOOR/ ENTEBBE AIRPORT TO HANDLE AIR CARGO/MOMBASA FOR FREIGHT / LEGO SUDAN BORDER</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <div class="single-footer-widget list-widget">
+                                <h3>Quick links</h3>
+                                <ul>
+                                    <li><a href="{% url 'account:cargoblog' %}">Cargo Handling</a></li>
+                                    <li><a href="{% url 'account:storageblog' %}">Cargo Storage</a></li>
+                                    <li><a href="{% url 'account:transferblog' %}">Money Transfer</a></li>
+                                    <li><a href="{% url 'account:suppliesblog' %}">General Supplies</a></li>
+                                    <li><a href="{% url 'account:airblog' %}">clearing and freight forwarding</a></li>
+                                    <li><a href="{% url 'account:transportationblog' %}">Transportation</a></li>
+                                    <li><a href="{% url 'account:consultancyblog' %}">Tax Consultancy</a></li>
+                                    <li><a href="{% url 'account:create_contact' %}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <div class="single-footer-widget instafeed-widget">
+                                <h3>Customer Service</h3>
+                                <ul>
+                                    <li><img src="/static/logistics/img/instafeed/1.jpg" alt=""></li>
+                                    <li><img src="/static/logistics/img/instafeed/2.jpg" alt=""></li>
+                                    <li><img src="/static/logistics/img/instafeed/img_2.jpg" alt=""></li>
+                                    <li><img src="/static/logistics/img/instafeed/details.jpg" alt=""></li>
+                                    <li><img src="/static/logistics/img/instafeed/5.jpg" alt=""></li>
+                                    <li><img src="/static/logistics/img/instafeed/6.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-border"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                            <div class="footer-copyright wow fadeIn">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FOOER AREA END-->
+    
+
+    <!--====== SCRIPTS JS ======-->
+    <script src="/static/logistics/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/static/logistics/js/vendor/bootstrap.min.js"></script>
+
+    <!--====== PLUGINS JS ======-->
+    <script src="/static/logistics/js/vendor/jquery.easing.1.3.js"></script>
+    <script src="/static/logistics/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/logistics/js/vendor/jquery.appear.js"></script>
+    <script src="/static/logistics/js/owl.carousel.min.js"></script>
+    <script src="/static/logistics/js/stellar.js"></script>
+    <script src="/static/logistics/js/wow.min.js"></script>
+    <script src="/static/logistics/js/stellarnav.min.js"></script>
+    <script src="/static/logistics/js/contact-form.js"></script>
+    <script src="/static/logistics/js/jquery.sticky.js"></script>
+
+    <!--===== ACTIVE JS=====-->
+    <script src="/static/logistics/js/main.js"></script>
+</body>
+
+</html>
